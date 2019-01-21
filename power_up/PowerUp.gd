@@ -24,7 +24,6 @@ func _ready():
 	$Timer.wait_time = rand_range(2, 5)
 	$Timer.start()
 
-
 func pickup():
 	monitoring = false # monitoring disables the ara enter and exit signals from Area2D
 	$Tween.start()
@@ -34,11 +33,14 @@ func _on_Tween_tween_completed(object, key):
 	queue_free()
 
 
+func _on_PowerUp_area_entered(area):
+	queue_free()
+
+
+func _on_LifeTime_timeout():
+	queue_free()
+
+
 func _on_Timer_timeout():
 	$AnimatedSprite.frame = 0
 	$AnimatedSprite.play()
-
-
-func _on_Coin_area_entered(area):
-	if area.is_in_group("obstacles"):
-		position = Vector2(rand_range(0, screensize.x), rand_range(0, screensize.y))

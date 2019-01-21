@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pow-frame-3.png-b920ebf54e482a8e905224aea9b452be.stex"
+path="res://.import/pow-frame-8.png-daf92be6218f60f302c0a3bde9ccffba.stex"
 
 [deps]
 
-source_file="res://pow/pow-frame-3.png"
-dest_files=[ "res://.import/pow-frame-3.png-b920ebf54e482a8e905224aea9b452be.stex" ]
+source_file="res://power_up/pow-frame-8.png"
+dest_files=[ "res://.import/pow-frame-8.png-daf92be6218f60f302c0a3bde9ccffba.stex" ]
 
 [params]
 
